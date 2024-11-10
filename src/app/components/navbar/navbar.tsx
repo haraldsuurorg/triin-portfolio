@@ -5,12 +5,14 @@ export default function Navbar() {
     return (
         <header className="container w-full flex justify-between items-center py-8">
             <div>
-                <Image
-                    src="/logo.png"
-                    alt="logo"
-                    width={100}
-                    height={100}
-                />
+                <a href="/">
+                    <Image
+                        src="/logo.svg"
+                        alt="logo"
+                        width={175}
+                        height={100}
+                    />
+                </a>
             </div>
 
             <nav className="flex gap-8">
