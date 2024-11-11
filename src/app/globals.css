@@ -47,6 +47,10 @@ body {
   a {
     @apply transition;
     @apply text-heading;
+
+    &:hover {
+      @apply text-primary;
+    }
   }
   
   p {
