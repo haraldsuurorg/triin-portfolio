@@ -15,7 +15,7 @@ export default function Navbar() {
                 </a>
             </div>
 
-            <nav className="flex gap-8">
+            <nav className="flex gap-8 text-heading">
                 <Link href="/">Avaleht</Link>
                 <Link href="/minust">Minust</Link>
                 <Link href="/kontakt">Kontakt</Link>

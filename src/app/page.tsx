@@ -76,7 +76,7 @@ export default function Home() {
               <p className="subheading">Minust</p>
               <h2 className="text-white">Parimad töövõtted <br /> ning tohutu kogemuste pagas</h2>
               <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <Button className="hover:text-white" href="#">Vaata CV-d</Button>
+              <Button className="hover:text-white" href="/minust">Vaata CV-d</Button>
             </div>
           </div>
         </section>
