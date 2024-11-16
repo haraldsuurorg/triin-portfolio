@@ -62,13 +62,13 @@ export default function Home() {
         {/* About section */}
         <section id="about" className="py-24 bg-[#343434]">
           <div className="container flex items-center">
-            <div className="w-1/2">
+            <div className="w-1/2 mr-16">
               <Image
                 src="/about-photo.jpg"
                 alt="Dr. Triin Suurorg"
                 width={500}
                 height={500}
-                className="h-[550px] object-cover object-bottom"
+                className="w-full aspect-square object-cover"
               />
             </div>
 

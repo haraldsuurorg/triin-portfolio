@@ -20,8 +20,9 @@ export default function About() {
           </section>
 
           {/* CV */}
-          <section id="cv" className="py-24 bg-white">
-            <div className="container flex">
+          <section id="cv" className="bg-white pb-4">
+            <div className="pt-24 pb-8 container flex border-b border-[#767471] border-opacity-30">
+              {/* <!-- Left side--> */}
               <div className="flex flex-col w-1/3">
                 <div className="flex justify-center bg-[#D6A07E]">
                   <Image
@@ -35,30 +36,28 @@ export default function About() {
 
                 <h3 className="pt-6">Dr. Triin Suurorg</h3>
                 <p className="pb-8 text-sm">Implantoloog</p>
-
                 <div className="flex flex-col gap-4 py-8 border-y border-[#767471] border-opacity-30">
                   <IconBox 
                     iconSrc="/icons/map.svg"
                     alt="Address"
                     text="Tallinn, Eesti"
-                    link="#"
+                    Link={false}
                   />
 
-                  <IconBox 
+                  <IconBox
                     iconSrc="/icons/letter.svg"
                     alt="Email"
                     text="triinsuurorg@gmail.com"
                     link="mailto:triinsuurorg@gmail.com"
                   />
                 </div>
+                  <p className="mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt facilisis augue id pellentesque. Integer lorem tellus, scelerisque sed turpis in, consequat sollicitudin tellus. Morbi vitae porttitor nisi. Cras feugiat sed velit eget imperdiet. Donec fringilla augue sed lectus tincidunt, non sodales magna aliquet. Praesent eu augue ut libero accumsan pulvinar eget blandit augue. Fusce molestie facilisis est ut accumsan. Aenean eros leo, tincidunt at tincidunt nec, egestas vel turpis. Duis egestas dui id dui dapibus ornare. Praesent est dui, porttitor ac arcu at, posuere aliquet nulla. Nam aliquam velit eu nunc facilisis elementum.</p>
               </div>
 
+              {/* <!-- Right side--> */}
               <div className="flex flex-col w-2/3 ml-12">
-                <h3 className="mb-4">Biograafia</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt facilisis augue id pellentesque. Integer lorem tellus, scelerisque sed turpis in, consequat sollicitudin tellus. Morbi vitae porttitor nisi. Cras feugiat sed velit eget imperdiet. Donec fringilla augue sed lectus tincidunt, non sodales magna aliquet. Praesent eu augue ut libero accumsan pulvinar eget blandit augue. Fusce molestie facilisis est ut accumsan. Aenean eros leo, tincidunt at tincidunt nec, egestas vel turpis. Duis egestas dui id dui dapibus ornare. Praesent est dui, porttitor ac arcu at, posuere aliquet nulla. Nam aliquam velit eu nunc facilisis elementum.</p>
-
-                <h3 className="mt-8">Hariduskäik</h3>
-                <div className="flex flex-col gap-8 mt-6 mb-4 py-8 border-t border-[#767471] border-opacity-30">
+                <h3>Hariduskäik</h3>
+                <div className="flex flex-col gap-8 mt-6 py-8 border-t border-[#767471] border-opacity-30">
                   <div className="flex flex-col gap-4">
                     <CVBox years="1989 - 1993" text="Tartu Ülikool. Ravi eriala üliõpilane" />
                     <CVBox years="1993 - 1997" text="Stockholmi Karolinska Instituut. Õpingud hammaste ravis, proteesimises ja kirurgias" />
@@ -71,7 +70,7 @@ export default function About() {
                 </div>
 
                 <h3 className="mt-8">Täienduskoolitused</h3>
-                <div className="flex flex-col gap-8 mt-6 mb-4 py-8 border-t border-[#767471] border-opacity-30">
+                <div className="flex flex-col gap-8 mt-6 py-8 border-t border-[#767471] border-opacity-30">
                   <CVBox years="03.10.2000" text="PHI spetsialistikoolitused implantoloogias"/>
                   <CVBox years="16.03.2001" text="Dr Juha Peltola, Wolfgang Wedenig seminar 'Implantaadid hambaravis'" />
                   <CVBox years="10.04.2003" text="3i Implant Innovations, Basic Restorative Hands-on Course" />
@@ -101,7 +100,7 @@ export default function About() {
                 </div>
 
                 <h3 className="mt-8">Artiklid</h3>
-                <div className="flex flex-col gap-8 mt-6 mb-4 py-8 border-t border-[#767471] border-opacity-30">
+                <div className="flex flex-col gap-8 mt-6 py-8 border-t border-[#767471] border-opacity-30">
                   <CVBox years="Kodutoher, august 2004"   text="„Naeratus nagu pärl“" />
                   <CVBox years="Kodutoher, aprill 2008"   text="„Implantaat, lünkliku naeratuse päästeingel“" />
                   <CVBox years="Kodutoher, juuni 2008"    text="„Naeratus number kolm“" />
@@ -112,6 +111,7 @@ export default function About() {
             </div>
           </section>
         </main>
+
         <Footer className="bg-white" />
       </div>
     );

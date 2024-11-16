@@ -4,7 +4,7 @@ interface FooterProps {
 
 export default function Footer({ className }: FooterProps) {
     return (
-        <footer className={`flex items-center justify-center container py-4 ${className}`}>
+        <footer className={`flex items-center justify-center py-4 ${className}`}>
             <p>Triin Suurorg {new Date().getFullYear()}. Kõik õigused on kaitstud.</p>
         </footer>
     )
