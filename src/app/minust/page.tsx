@@ -66,37 +66,46 @@ export default function About() {
                     <CVBox years="2001"      text="Implantoloogiaalane praktika, Dr Kari Luotio, Osfix International Ltd Soomes" />
                     <CVBox years="2003 - 2004" text="TPERH näo-ja lõualuukirurgia osakond. Praktika näo- ja lõualuukirurgia alal" />
                     <CVBox years="2009 - 2010" text="Structured implant course in Frankfurt University." />
+                    <CVBox years="2024" text="Pharma Nord Meistriklass: “Tervise alustalad”" />
                   </div>
                 </div>
 
                 <h3 className="mt-8">Täienduskoolitused</h3>
                 <div className="flex flex-col gap-8 mt-6 py-8 border-t border-[#767471] border-opacity-30">
-                  <CVBox years="03.10.2000" text="PHI spetsialistikoolitused implantoloogias"/>
-                  <CVBox years="16.03.2001" text="Dr Juha Peltola, Wolfgang Wedenig seminar 'Implantaadid hambaravis'" />
-                  <CVBox years="10.04.2003" text="3i Implant Innovations, Basic Restorative Hands-on Course" />
-                  <CVBox years="10.05.2003" text="Dr Bernhard Giesenhagen, 'Theoretical training and LIVE operations in advanced implantology'" />
-                  <CVBox years="19.03.2004" text="Frank Bryggen 'Computer-aided tomography in implantology'" />
-                  <CVBox years="14.05.2004" text="ITI-Weekend seminar Helsinki" />
-                  <CVBox years="20.05.2004" text="Dr Bernhard Giesenhagen 'Theoretical training and LIVE operations (augmentation techniques)'" />
-                  <CVBox years="21.05.2004" text="V Baltic Workshop on Osseointegrated Dental Implants" />
-                  <CVBox years="04.07.2004" text="Baltic Workshop on Prosthesis" />
-                  <CVBox years="16.09.2004" text="13th Annual Scientific Meeting of EAO, Pariis" />
-                  <CVBox years="18.04.2005" text="Pro-Implant Education Center, Melsungen, Saksamaa" />
-                  <CVBox years="22.04.2005" text="Dentsply Friadent Annual Congress" />
-                  <CVBox years="17.05.2005" text="Dr Darius Pocebutas, kirurgiline praktika, Kaunas" />
-                  <CVBox years="20.06.2005" text="Dr Juha Paatsama, Kokonaishammashoita Klinika, Helsinki" />
-                  <CVBox years="22.09.2005" text="14th Annual Meeting of EAO, München" />
-                  <CVBox years="12.05.2006" text="ITI Weekend seminar, Helsinki" />
-                  <CVBox years="05.06.2006" text="Hannoveri Ülikooli haigla näo- ja lõualuukirurgia osakond, praktika kirurgias" />
-                  <CVBox years="02.12.2006" text="Esteetiline tulemus implantoloogias. Praktiline implantoloogiaalane seminar. M.Stiller" />
-                  <CVBox years="19.01.2007" text="Soft tissue management, sinus lift, bone augmentive procedures. Italy" />
-                  <CVBox years="26.04.2007" text="ITI World Symposium. New York" />
-                  <CVBox years="06.06.2007" text="Live surgeries on dental implantology. 3D One step Augmentation, implantation. Dr Berndt Giesenhagen" />
-                  <CVBox years="22.10.2007" text="Esteetiline ja funktsionaalne harmoonia läbi kliinilise ja tehnilise perspektiivi. Dr Ashok Sethi ja MDT Peter Sochor (Inglismaa)" />
-                  <CVBox years="27.10.2007" text="16th Annual meeting of EAO in Barcelona" />
-                  <CVBox years="15.02.2008" text="Ilu ja kiiruse kontseptsioon implantoloogilise ravi protseduurides. Dr Orcan Yüksel (Saksamaa)" />
-                  <CVBox years="17.05.2008" text="6th Congress of Baltic Association for Maxillofacial and Plastic Surgery" />
-                  <CVBox years="19.03.2010" text="14th Densply Friadent World Symposium" />
+                  <CVBox years="Oktoober 2000" text="PHI spetsialistikoolitused implantoloogias"/>
+                  <CVBox years="Märts 2001" text="Dr Juha Peltola, Wolfgang Wedenig seminar 'Implantaadid hambaravis'" />
+                  <CVBox years="Aprill 2003" text="3i Implant Innovations, Basic Restorative Hands-on Course" />
+                  <CVBox years="Mai 2003" text="Dr Bernhard Giesenhagen, 'Theoretical training and LIVE operations in advanced implantology'" />
+                  <CVBox years="Märts 2004" text="Frank Bryggen 'Computer-aided tomography in implantology'" />
+                  <CVBox years="Mai 2004" text="ITI-Weekend seminar Helsinki" />
+                  <CVBox years="Mai 2004" text="Dr Bernhard Giesenhagen 'Theoretical training and LIVE operations (augmentation techniques)'" />
+                  <CVBox years="Mai 2004" text="V Baltic Workshop on Osseointegrated Dental Implants" />
+                  <CVBox years="Juuli 2004" text="Baltic Workshop on Prosthesis" />
+                  <CVBox years="September 2004" text="13th Annual Scientific Meeting of EAO, Pariis" />
+                  <CVBox years="April 2005" text="Pro-Implant Education Center, Melsungen, Saksamaa" />
+                  <CVBox years="April 2005" text="Dentsply Friadent Annual Congress" />
+                  <CVBox years="Mai 2005" text="Dr Darius Pocebutas, kirurgiline praktika, Kaunas" />
+                  <CVBox years="Juuni 2005" text="Dr Juha Paatsama, Kokonaishammashoita Klinika, Helsinki" />
+                  <CVBox years="September 2005" text="14th Annual Meeting of EAO, München" />
+                  <CVBox years="Mai 2006" text="ITI Weekend seminar, Helsinki" />
+                  <CVBox years="Juuni 2006" text="Hannoveri Ülikooli haigla näo- ja lõualuukirurgia osakond, praktika kirurgias" />
+                  <CVBox years="Detsember 2006" text="Esteetiline tulemus implantoloogias. Praktiline implantoloogiaalane seminar. M.Stiller" />
+                  <CVBox years="Jaanuar 2007" text="Soft tissue management, sinus lift, bone augmentive procedures. Italy" />
+                  <CVBox years="April 2007" text="ITI World Symposium. New York" />
+                  <CVBox years="Juuni 2007" text="Live surgeries on dental implantology. 3D One step Augmentation, implantation. Dr Berndt Giesenhagen" />
+                  <CVBox years="Oktoober 2007" text="Esteetiline ja funktsionaalne harmoonia läbi kliinilise ja tehnilise perspektiivi. Dr Ashok Sethi ja MDT Peter Sochor (Inglismaa)" />
+                  <CVBox years="Oktoober 2007" text="16th Annual meeting of EAO in Barcelona" />
+                  <CVBox years="Veebruar 2008" text="Ilu ja kiiruse kontseptsioon implantoloogilise ravi protseduurides. Dr Orcan Yüksel (Saksamaa)" />
+                  <CVBox years="Mai 2008" text="6th Congress of Baltic Association for Maxillofacial and Plastic Surgery" />
+                  <CVBox years="Mai 2010" text="14th Densply Friadent World Symposium" />
+                  <CVBox years="Märts 2012" text="15th Densply Friadent World Symposium, Hamburg" />
+                  <CVBox years="Mai 2013" text="Osteology Symposium, Monaco" />
+                  <CVBox years="Juuni 2013" text="Piezoelectric Bone Surgery 2nd International Symposium, Florence Italy" />
+                  <CVBox years="September 2014" text="23rd Annual Scientific Meeting of the European Association of Osseointegration, Rome" />
+                  <CVBox years="Juuni 2015" text="8th Conference of the European Federation of Periodontology, London" />
+                  <CVBox years="Märts 2017" text="Advanced Bone and Soft Tissue Regeneration Techniques in Implant Therapy, Urban Regeneration Insitute" />
+                  <CVBox years="November 2022" text="International NeoArch hands on course by Dr Pedro Rodrigues, Braga Portugal" />
+
                 </div>
 
                 <h3 className="mt-8">Artiklid</h3>

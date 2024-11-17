@@ -22,7 +22,7 @@ export default function Contact() {
               <div className="flex flex-col gap-6 justify-center w-1/2">
                 <p className="subheading">Tule vastuvõtule</p>
                 <h2 className="text-heading">Vali endale meelepärane kliinik</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p>Praegusel hetkel töötan kahes erinevas kliinikus Tallinnas. Kliiniku valimisel soovitan lähtuda asukohast. Mõlema kliiniku juures on patsientidele tasuta parkimine.</p>
                 
                 <div className="flex flex-col gap-4 items-end">
                   <IconBox

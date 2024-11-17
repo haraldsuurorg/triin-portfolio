@@ -16,8 +16,8 @@ export default function Home() {
         <section id="hero" className="pt-12">
           <div className="flex container">
             <div className="flex flex-col w-1/2 gap-4 justify-center pr-12 pb-12 max-h-[90vh]">
-              <h1>Care you can believe in.</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <h1>Rahu algab naeratusest</h1>
+              <p>Parim tulemus võimalikult väheinvasiivse tehnika ja väikeste kulutustega. Hammaskonna taastamisel on minu peamine eesmärk saavutada loomulik tulemus. Parim hambaravitulemus on selline, kus tehtu jääb märkamatuks ja tundub justkui loomulik osa Teie naeratusest.</p>
               <Button href="#usps" className="mt-4">Loe rohkem</Button>
             </div>
 
@@ -35,26 +35,24 @@ export default function Home() {
 
         {/* USPs section */}
         <section id="usps" className="bg-white pt-40 pb-24 -mt-10">
-          <div className="flex gap-8 container">
+          <div className="grid grid-cols-3 gap-8 container">
             <USP
               icon="/icons/holistic.svg"
               title="Holistiline lähenemine"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              description={`Usun, et hammaste tervis moodustab olulise osa inimeste üldisest tervisest ja avaldab väga suurt mõju enesehinnangule. Ema Teresa on öelnud: "Rahu algab naeratusest". Raviprotsessis kasutan võimalikult vähe kunstmaterjale ja rutiinse implantatsiooni järgselt patsientidele antibiootikume välja ei kirjuta.`}
               className="bg-primary"
             />
 
             <USP
               icon="/icons/experience.svg"
               title="Suur kogemustepagas"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              className="hover:bg-primary"
+              description="Alates ülikooli lõpetamisest 1998. aastal olen sptesialiseerunud ravile hambaimplantaatidega. Viimased 15 aastat töötan ainult implantaatidega ja muude hambaraviprotseduuridega ei tegele. Karjääri jooksul olen kokku puutunud väga keeruliste ravijuhtumitega. Tihti on tulnud asendada implantaatidega kogu hammaskond."
             />
 
             <USP
               icon="/icons/clinic.svg"
               title="Parimad töövahendid"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              className="hover:bg-primary"
+              description={`Alates 2013. aastast töötan eelkõige Šveitsi tootja Straumann-i implantaatidega. Straumann-i implantaate valmistatakse patenteeritud kõrgekvaliteedilise titaani ja tsirkooniumi sulamist. SLActive-i implantaadid on spetsiaalses vedelikus, mis kiirendab veelgi nende ühildumist luuga. Straumann-i implantaadie kohta leiab rohkem infot klikkides <a href="https://straumann.ee/" target="_blank">siia</a>.`}
             />
           </div>
         </section>
