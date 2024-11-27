@@ -17,7 +17,7 @@ export default function USP({ icon, title, description, className }: USPProps) {
                 height={60}
                 className="bg-white p-3"
             />
-            <h3>{title}</h3>
+            <h3 className="text-center">{title}</h3>
             <p
                 className="text-center"
                 dangerouslySetInnerHTML={{ __html: description }}

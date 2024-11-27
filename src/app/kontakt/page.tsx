@@ -10,16 +10,16 @@ export default function Contact() {
       <Navbar />
       <main className="min-h-screen">
         {/* Hero section */}
-        <section id="hero" className="py-24">
+        <section id="hero" className="py-12 md:py-24">
           <div className="container">
             <h1 className="text-center">Kontakt</h1>
           </div>
         </section>
 
         {/* Contact section */}
-        <section id="contact" className="py-24 bg-white">
-          <div className="container flex flex-row-reverse">
-            <div className="flex flex-col gap-6 justify-center w-1/2">
+        <section id="contact" className="py-12 md:py-24 bg-white">
+          <div className="container flex flex-col md:flex-row-reverse">
+            <div className="flex flex-col gap-6 justify-center md:w-1/2">
               <p className="subheading">Tule vastuvõtule</p>
               <h2 className="text-heading">Vali endale meelepärane kliinik</h2>
               <p>
@@ -49,7 +49,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="w-1/2 flex justify-start items-star mr-16">
+            <div className="md:w-1/2 flex justify-start items-star mt-8 md:mt-0 md:mr-16">
               <Image
                 src="/about-photo.jpg"
                 alt="About photo"
@@ -61,17 +61,17 @@ export default function Contact() {
           </div>
         </section>
 
-        <section id="contact-form" className="py-24 bg-background">
-          <div className="container flex flex-col items-center gap-6">
+        <section id="contact-form" className="py-12 md:py-24 bg-background">
+          <div className="container flex flex-col items-center gap-6 md:w-1/2">
             <p className="subheading">Saada kiri</p>
-            <p className="text-center w-1/2">
+            <p className="text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa
               euismod ultrices. Lorem ipsum dolor sit amet, consectetur
               adipiscing elit
             </p>
 
-            <form className="flex flex-col gap-4 p-8 pb-6 w-1/2">
+            <form className="flex flex-col gap-4 p-8 pb-6 w-full lg:w-3/4">
               <div className="flex flex-col gap-2">
                 {/* <label htmlFor="name">Nimi</label> */}
                 <input

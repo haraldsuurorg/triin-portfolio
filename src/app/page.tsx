@@ -15,7 +15,7 @@ export default function Home() {
         {/* Hero section */}
         <section id="hero" className="pt-12">
           <div className="flex flex-col md:flex-row container">
-            <div className="flex flex-col md:w-1/2 gap-4 justify-center md:pr-12 pb-12 max-h-[90vh]">
+            <div className="flex flex-col md:w-1/2 gap-4 justify-center md:pr-12 md:pb-24 lg:pb-12 max-h-[90vh]">
               <h1>Rahu algab naeratusest</h1>
               <p>
                 Parim tulemus võimalikult väheinvasiivse tehnika ja väikeste
@@ -42,8 +42,8 @@ export default function Home() {
         </section>
 
         {/* USPs section */}
-        <section id="usps" className="bg-white pt-40 pb-24 -mt-10">
-          <div className="grid grid-cols-3 gap-8 container">
+        <section id="usps" className="bg-white pt-40 pb-12 md:pb-24 -mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 container">
             <USP
               icon="/icons/holistic.svg"
               title="Holistiline lähenemine"
@@ -66,9 +66,9 @@ export default function Home() {
         </section>
 
         {/* About section */}
-        <section id="about" className="py-24 bg-[#343434]">
-          <div className="container flex items-center">
-            <div className="w-1/2 mr-16">
+        <section id="about" className="py-12 md:py-24 bg-[#343434]">
+          <div className="container flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 md:mr-16">
               <Image
                 src="/about-photo.jpg"
                 alt="Dr. Triin Suurorg"
@@ -78,7 +78,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="flex flex-col gap-6 w-1/2">
+            <div className="flex flex-col gap-6 mt-8 md:mt-0 md:w-1/2">
               <p className="subheading">Minust</p>
               <h2 className="text-white">
                 Parimad töövõtted <br /> ning tohutu kogemuste pagas
@@ -97,12 +97,12 @@ export default function Home() {
         </section>
 
         {/* Reviews section */}
-        <section id="reviews" className="py-24">
+        <section id="reviews" className="py-12 md:py-24">
           <div className="container flex flex-col gap-4">
             <p className="subheading text-center">arvustused</p>
             <h2 className="text-center">Patsientide kogemused</h2>
 
-            <div className="grid grid-cols-2 gap-8 pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
               <Review
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 name="Kerli"
