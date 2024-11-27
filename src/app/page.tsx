@@ -14,14 +14,22 @@ export default function Home() {
       <main>
         {/* Hero section */}
         <section id="hero" className="pt-12">
-          <div className="flex container">
-            <div className="flex flex-col w-1/2 gap-4 justify-center pr-12 pb-12 max-h-[90vh]">
+          <div className="flex flex-col md:flex-row container">
+            <div className="flex flex-col md:w-1/2 gap-4 justify-center md:pr-12 pb-12 max-h-[90vh]">
               <h1>Rahu algab naeratusest</h1>
-              <p>Parim tulemus võimalikult väheinvasiivse tehnika ja väikeste kulutustega. Hammaskonna taastamisel on minu peamine eesmärk saavutada loomulik tulemus. Parim hambaravitulemus on selline, kus tehtu jääb märkamatuks ja tundub justkui loomulik osa Teie naeratusest.</p>
-              <Button href="#usps" className="mt-4">Loe rohkem</Button>
+              <p>
+                Parim tulemus võimalikult väheinvasiivse tehnika ja väikeste
+                kulutustega. Hammaskonna taastamisel on minu peamine eesmärk
+                saavutada loomulik tulemus. Parim hambaravitulemus on selline,
+                kus tehtu jääb märkamatuks ja tundub justkui loomulik osa Teie
+                naeratusest.
+              </p>
+              <Button href="#usps" className="mt-4">
+                Loe rohkem
+              </Button>
             </div>
 
-            <div className="flex justify-center w-1/2 ml-12 bg-[#D6A07E]">
+            <div className="flex justify-center md:w-1/2 md:ml-12 bg-[#D6A07E]">
               <Image
                 src="/hero-photo.webp"
                 alt="Dr. Triin Suurorg"
@@ -72,9 +80,18 @@ export default function Home() {
 
             <div className="flex flex-col gap-6 w-1/2">
               <p className="subheading">Minust</p>
-              <h2 className="text-white">Parimad töövõtted <br /> ning tohutu kogemuste pagas</h2>
-              <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <Button className="hover:text-white" href="/minust">Vaata CV-d</Button>
+              <h2 className="text-white">
+                Parimad töövõtted <br /> ning tohutu kogemuste pagas
+              </h2>
+              <p className="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa
+                euismod ultrices. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit
+              </p>
+              <Button className="hover:text-white" href="/minust">
+                Vaata CV-d
+              </Button>
             </div>
           </div>
         </section>
@@ -89,7 +106,7 @@ export default function Home() {
               <Review
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 name="Kerli"
-                color= "primary"
+                color="primary"
               />
 
               <Review

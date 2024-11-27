@@ -21,26 +21,29 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 @layer base {
   h1 {
     @apply text-heading;
-    font-size: 80px;
+    font-size: 47px;
+    @apply lg:text-[80px];
     font-weight: 500;
     line-height: 1.25em;
   }
 
   h2 {
     @apply text-heading;
-    font-size: 55px;
+    font-size: 38px;
+    @apply lg:text-[55px];
     line-height: 1.25em;
   }
 
   h3 {
     @apply text-heading;
-    font-size: 24px;
+    font-size: 19px;
+    @apply lg:text-[24px];
     font-weight: 500;
   }
 
@@ -52,14 +55,15 @@ body {
       @apply text-primary;
     }
   }
-  
+
   p {
     @apply text-text;
   }
 
   p.subheading {
     @apply text-primary;
-    font-size: 16px;
+    font-size: 14px;
+    @apply lg:text-[16px];
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -71,8 +75,7 @@ section {
 }
 
 .container {
-  padding-left: 80px;
-  padding-right: 80px;
+  @apply px-5 md:px-6 lg:px-20;
   margin: 0 auto;
 }
 
