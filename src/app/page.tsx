@@ -24,12 +24,12 @@ export default function Home() {
                 kus tehtu jääb märkamatuks ja tundub justkui loomulik osa Teie
                 naeratusest.
               </p>
-              <Button href="#usps" className="mt-4">
+              <Button href="#usps" className="mt-4 hidden md:block">
                 Loe rohkem
               </Button>
             </div>
 
-            <div className="flex justify-center md:w-1/2 md:ml-12 bg-[#D6A07E]">
+            <div className="flex justify-center mt-8 md:mt-0 md:w-1/2 md:ml-12 bg-[#D6A07E]">
               <Image
                 src="/hero-photo.webp"
                 alt="Dr. Triin Suurorg"
@@ -42,8 +42,8 @@ export default function Home() {
         </section>
 
         {/* USPs section */}
-        <section id="usps" className="bg-white pt-40 pb-12 md:pb-24 -mt-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 container">
+        <section id="usps" className="bg-white pt-32 md:pt-40 pb-4 md:pb-24 -mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 md:gap-8 container">
             <USP
               icon="/icons/holistic.svg"
               title="Holistiline lähenemine"

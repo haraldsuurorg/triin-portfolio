@@ -61,8 +61,9 @@ export default function Contact() {
           </div>
         </section>
 
+        {/* Contact form section */}
         <section id="contact-form" className="py-12 md:py-24 bg-background">
-          <div className="container flex flex-col items-center gap-6 md:w-1/2">
+          <div className="container flex flex-col items-center gap-6 md:w-3/4 lg:w-1/2 lg:min-w-[750px]">
             <p className="subheading">Saada kiri</p>
             <p className="text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque

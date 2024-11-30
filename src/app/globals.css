@@ -16,12 +16,18 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  @apply pt-24
 }
 
 @layer base {

@@ -13,17 +13,17 @@ export default function About() {
 
         <main>
           {/* Hero section */}
-          <section id="hero" className="py-24">
+          <section id="hero" className="py-12 md:py-24">
             <div className="container">
               <h1 className="text-center">Minust</h1>
             </div>
           </section>
 
           {/* CV */}
-          <section id="cv" className="bg-white pb-4">
-            <div className="pt-24 pb-8 container flex border-b border-[#767471] border-opacity-30">
+          <section id="cv" className="bg-white">
+            <div className="pt-12 md:pt-24 pb-8 container flex flex-col md:flex-row border-b border-[#767471] border-opacity-30">
               {/* <!-- Left side--> */}
-              <div className="flex flex-col w-1/3">
+              <div className="flex flex-col w-full md:w-1/3">
                 <div className="flex justify-center bg-[#D6A07E]">
                   <Image
                     src="/hero-photo.webp"
@@ -55,10 +55,10 @@ export default function About() {
               </div>
 
               {/* <!-- Right side--> */}
-              <div className="flex flex-col w-2/3 ml-12">
-                <h3>Hariduskäik</h3>
-                <div className="flex flex-col gap-8 mt-6 py-8 border-t border-[#767471] border-opacity-30">
-                  <div className="flex flex-col gap-4">
+              <div className="flex flex-col w-full pt-8 md:pt-0 md:w-2/3 md:ml-12">
+                <h3 className="text-center md:text-left">Hariduskäik</h3>
+                <div className="flex flex-col gap-8 mt-4 py-8 border-t border-[#767471] border-opacity-30">
+                  <div className="flex flex-col md:grid md:grid-cols-[max-content,1fr] gap-y-8 gap-x-6 gap-4">
                     <CVBox years="1989 - 1993" text="Tartu Ülikool. Ravi eriala üliõpilane" />
                     <CVBox years="1993 - 1997" text="Stockholmi Karolinska Instituut. Õpingud hammaste ravis, proteesimises ja kirurgias" />
                     <CVBox years="1999"      text="Implantoloogiaalane praktika, dr Pietro Cacciamani Dental Studio Milaanos" />
@@ -70,8 +70,8 @@ export default function About() {
                   </div>
                 </div>
 
-                <h3 className="mt-8">Täienduskoolitused</h3>
-                <div className="flex flex-col gap-8 mt-6 py-8 border-t border-[#767471] border-opacity-30">
+                <h3 className="mt-8 text-center md:text-left">Täienduskoolitused</h3>
+                <div className="flex flex-col md:grid md:grid-cols-[max-content,1fr] gap-y-8 gap-x-6 mt-4 py-8 border-t border-[#767471] border-opacity-30">
                   <CVBox years="Oktoober 2000" text="PHI spetsialistikoolitused implantoloogias"/>
                   <CVBox years="Märts 2001" text="Dr Juha Peltola, Wolfgang Wedenig seminar 'Implantaadid hambaravis'" />
                   <CVBox years="Aprill 2003" text="3i Implant Innovations, Basic Restorative Hands-on Course" />
@@ -108,8 +108,8 @@ export default function About() {
 
                 </div>
 
-                <h3 className="mt-8">Artiklid</h3>
-                <div className="flex flex-col gap-8 mt-6 py-8 border-t border-[#767471] border-opacity-30">
+                <h3 className="mt-8 text-center md:text-left">Artiklid</h3>
+                <div className="flex flex-col md:grid md:grid-cols-[max-content,1fr] gap-y-8 gap-x-6 mt-4 py-8 border-t border-[#767471] border-opacity-30">
                   <CVBox years="Kodutoher, august 2004"   text="„Naeratus nagu pärl“" />
                   <CVBox years="Kodutoher, aprill 2008"   text="„Implantaat, lünkliku naeratuse päästeingel“" />
                   <CVBox years="Kodutoher, juuni 2008"    text="„Naeratus number kolm“" />
