@@ -1,0 +1,47 @@
+{
+  "navigation": {
+    "home": "Avaleht",
+    "about": "Minust",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "title": "Rahu algab naeratusest",
+      "description": "Parim tulemus võimalikult väheinvasiivse tehnika ja väikeste kulutustega. Hammaskonna taastamisel on minu peamine eesmärk saavutada loomulik tulemus. Parim hambaravitulemus on selline, kus tehtu jääb märkamatuks ja tundub justkui loomulik osa Teie naeratusest.",
+      "button": "Loe rohkem"
+    },
+    "usp": {
+      "usp1": {
+        "title": "Holistiline lähenemine",
+        "description": "Usun, et hammaste tervis moodustab olulise osa inimeste üldisest tervisest ja avaldab väga suurt mõju enesehinnangule. Ema Teresa on öelnud: \"Rahu algab naeratusest\". Raviprotsessis kasutan võimalikult vähe kunstmaterjale ja rutiinse implantatsiooni järgselt patsientidele antibiootikume välja ei kirjuta."
+      },
+      "usp2": {
+        "title": "Suur kogemustepagas",
+        "description": "Alates ülikooli lõpetamisest 1998. aastal olen sptesialiseerunud ravile hambaimplantaatidega. Viimased 15 aastat töötan ainult implantaatidega ja muude hambaraviprotseduuridega ei tegele. Karjääri jooksul olen kokku puutunud väga keeruliste ravijuhtumitega. Tihti on tulnud asendada implantaatidega kogu hammaskond."
+      },
+      "usp3": {
+        "title": "Parimad töövahendid",
+        "description": "Alates 2013. aastast töötan eelkõige Šveitsi tootja Straumann-i implantaatidega. Straumann-i implantaate valmistatakse patenteeritud kõrgekvaliteedilise titaani ja tsirkooniumi sulamist. SLActive-i implantaadid on spetsiaalses vedelikus, mis kiirendab veelgi nende ühildumist luuga. Straumann-i implantaadie kohta leiab rohkem infot klikkides <a>siia</a>."
+      }
+    },
+    "reviews": {
+      "title": "Mida patsiendid räägivad",
+      "review1": {
+        "text": "Review text here",
+        "author": "Author name"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Minust",
+      "description": "About page description"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontakt",
+      "description": "Contact page description"
+    }
+  }
+}

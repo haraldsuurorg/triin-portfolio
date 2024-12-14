@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import Navbar from "../components/navbar/navbar";
-import Footer from "../components/footer/footer";
-import IconBox from "../components/iconbox/iconbox";
-import Button from "../components/button/button";
+import Navbar from "@/app/components/navbar/navbar";
+import Footer from "@/app/components/footer/footer";
+import IconBox from "@/app/components/iconbox/iconbox";
+import Button from "@/app/components/button/button";
 export default function Contact() {
   return (
     <div className="bg-background">

@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import Navbar from "../components/navbar/navbar";
-import Footer from "../components/footer/footer";
-import IconBox from "../components/iconbox/iconbox";
-import CVBox from "../components/cvbox/cvbox";
+import Navbar from "@/app/components/navbar/navbar";
+import Footer from "@/app/components/footer/footer";
+import IconBox from "@/app/components/iconbox/iconbox";
+import CVBox from "@/app/components/cvbox/cvbox";
 
 
 export default function About() {

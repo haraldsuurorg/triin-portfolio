@@ -1,0 +1,29 @@
+{
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "home": {
+      "hero": {
+        "title": "Peace begins with a smile",
+        "description": "The best result with the least invasive technique and the lowest cost. When restoring your teeth, my main goal is to achieve a natural result. The best dental result is one where what has been done is unnoticeable and feels like a natural part of your smile.",
+        "button": "Read more"
+      },
+      "usp": {
+        "usp1": {
+          "title": "Holistic approach",
+          "description": "I believe that dental health is a crucial part of overall health and has a significant impact on self-esteem. My mother, Teresa, once said: \"Peace begins with a smile\". In the dental process, I use the least amount of artificial materials and routine implantation followed by antibiotics."
+        },
+        "usp2": {
+          "title": "Extensive experience",
+          "description": "Since graduating from university in 1998, I have specialized in dental implants and other dental procedures. Over the past 15 years, I have only worked with implants and do not deal with other dental procedures. I have encountered many complex dental cases. Often, the entire dental implant was replaced."
+        },
+        "usp3": {
+          "title": "Best tools",
+          "description": "Since 2013, I have primarily worked with Swiss manufacturer Straumann implants. Straumann implants are made from high-quality titanium and zirconium alloy. SLActive implants are in a special liquid that accelerates their integration with the bone. You can find more information about Straumann implants by clicking <a>here</a>."
+        }
+      }
+    }
+  }
+  

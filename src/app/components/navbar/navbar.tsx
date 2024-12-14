@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export default function Navbar() {
   const pathname = usePathname();
 
@@ -12,13 +12,23 @@ export default function Navbar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsHeaderScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed w-full bg-background shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
+    <div className={`fixed w-full bg-background ${!isHeaderScrolled ? "" : "shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]"}`}>
       <header className="container w-full flex justify-between items-center py-8">
         <div>
-          <a href="/">
+          <Link href="/">
             <Image src="/logo.svg" alt="logo" width={175} height={100} />
-          </a>
+          </Link>
         </div>
 
         <nav className="hidden md:flex gap-8 text-heading">
