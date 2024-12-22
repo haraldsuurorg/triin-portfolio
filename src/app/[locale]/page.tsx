@@ -10,7 +10,7 @@ import Button from "../components/button/button";
 import Review from "../components/review/review";
 import Footer from "../components/footer/footer";
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata.home');
   
   return {

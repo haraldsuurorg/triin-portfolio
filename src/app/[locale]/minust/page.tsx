@@ -9,7 +9,7 @@ import IconBox from "@/app/components/iconbox/iconbox";
 import CVBox from "@/app/components/cvbox/cvbox";
 
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata.about');
 
   return {

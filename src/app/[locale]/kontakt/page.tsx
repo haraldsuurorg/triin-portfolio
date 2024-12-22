@@ -8,7 +8,7 @@ import IconBox from "@/app/components/iconbox/iconbox";
 import Button from "@/app/components/button/button";
 import { routing } from "@/i18n/routing";
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata.contact');
 
   return {
