@@ -41,19 +41,22 @@ export default function Navbar() {
 
   return (
     <div className={`fixed w-full bg-background ${!isHeaderScrolled ? "" : "shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]"}`}>
-      <header className="container w-full flex justify-between items-center py-8">
-        <div>
+      <header className="container w-full flex items-center py-8">
+        <div className="flex-1">
           <Link href="/">
-            <Image src="/logo.svg" alt="logo" width={175} height={100} />
+            <Image src="/logo.svg" alt="logo" width={150} height={100} />
           </Link>
         </div>
 
-        <nav className="hidden md:flex gap-8 text-heading">
+        <nav className="hidden md:flex gap-8 absolute left-1/2 transform -translate-x-1/2 text-heading">
           <Link href="/" className={getLinkClass("/")}>{t("home")}</Link>
           <Link href="/minust" className={getLinkClass("/minust")}>{t("about")}</Link>
           <Link href="/kontakt" className={getLinkClass("/kontakt")}>{t("contact")}</Link>
-          <LocaleSwitcher />
         </nav>
+
+        <div className="hidden md:flex flex-1 justify-end">
+          <LocaleSwitcher />
+        </div>
 
         <div className="flex md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <Image
@@ -76,9 +79,13 @@ export default function Navbar() {
 
       <div className={`mobile-menu h-[35vh] w-full top-[104px] left-0 z-2 bg-background flex items-center justify-center  ${isMenuOpen ? "block" : "hidden"}`}>
         <nav className="flex flex-col gap-6">
-          <Link href="/" className={getLinkClass("/")}>{t("home")}</Link>
-          <Link href="/minust" className={getLinkClass("/minust")}>{t("about")}</Link>
-          <Link href="/kontakt" className={getLinkClass("/kontakt")}>{t("contact")}</Link>
+          <Link href="/" className={`${getLinkClass("/")} text-center`}>{t("home")}</Link>
+          <Link href="/minust" className={`${getLinkClass("/minust")} text-center`}>{t("about")}</Link>
+          <Link href="/kontakt" className={`${getLinkClass("/kontakt")} text-center`}>{t("contact")}</Link>
+
+          <div>
+            <LocaleSwitcher />
+          </div>
         </nav>
       </div>
     </div>

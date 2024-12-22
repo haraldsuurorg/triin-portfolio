@@ -1,10 +1,34 @@
 import Image from "next/image";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Metadata } from "next";
 
 import Navbar from "@/app/components/navbar/navbar";
 import Footer from "@/app/components/footer/footer";
 import IconBox from "@/app/components/iconbox/iconbox";
 import Button from "@/app/components/button/button";
-export default function Contact() {
+import { routing } from "@/i18n/routing";
+
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations('metadata.contact');
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale: string) => ({ locale }));
+}
+
+export default async function Contact({params}: {params: Promise<{locale: string}>}) {
+
+  const {locale} = await params;
+
+  setRequestLocale(locale);
+
+  const t = await getTranslations("contact");
+
   return (
     <div className="bg-background">
       <Navbar />
@@ -12,7 +36,7 @@ export default function Contact() {
         {/* Hero section */}
         <section id="hero" className="py-12 md:py-24">
           <div className="container">
-            <h1 className="text-center">Kontakt</h1>
+            <h1 className="text-center">{t.raw('hero.title')}</h1>
           </div>
         </section>
 

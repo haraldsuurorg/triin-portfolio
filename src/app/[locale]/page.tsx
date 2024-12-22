@@ -1,13 +1,23 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { Link, routing } from '@/i18n/routing';
+import { routing } from '@/i18n/routing';
 import { setRequestLocale } from "next-intl/server";
+import { Metadata } from "next";
 
 import Navbar from "../components/navbar/navbar";
 import USP from "../components/usp/usp";
 import Button from "../components/button/button";
 import Review from "../components/review/review";
 import Footer from "../components/footer/footer";
+
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations('metadata.home');
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale: string) => ({ locale }));
@@ -89,18 +99,17 @@ export default async function Home({params,}: {params: Promise<{locale: string}>
             </div>
 
             <div className="flex flex-col gap-6 mt-8 md:mt-0 md:w-1/2">
-              <p className="subheading">Minust</p>
+              <p className="subheading">
+                {t("about.subtitle")}
+              </p>
               <h2 className="text-white">
-                Parimad töövõtted <br /> ning tohutu kogemuste pagas
+                {t("about.title")}
               </h2>
               <p className="text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa
-                euismod ultrices. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit
+                {t("about.description")}
               </p>
               <Button className="hover:text-white" href="/minust">
-                Vaata CV-d
+                {t("about.button")}
               </Button>
             </div>
           </div>
@@ -109,31 +118,31 @@ export default async function Home({params,}: {params: Promise<{locale: string}>
         {/* Reviews section */}
         <section id="reviews" className="py-12 md:py-24">
           <div className="container flex flex-col gap-4">
-            <p className="subheading text-center">arvustused</p>
-            <h2 className="text-center">Patsientide kogemused</h2>
+            <p className="subheading text-center">{t("reviews.subtitle")}</p>
+            <h2 className="text-center">{t("reviews.title")}</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
               <Review
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                name="Kerli"
+                text={t("reviews.review1.text")}
+                name={t("reviews.review1.author")}
                 color="primary"
               />
 
               <Review
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                name="Tarmo"
+                text={t("reviews.review2.text")}
+                name={t("reviews.review2.author")}
                 color="white"
               />
 
               <Review
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                name="Jaanika"
+                text={t("reviews.review3.text")}
+                name={t("reviews.review3.author")}
                 color="white"
               />
 
               <Review
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                name="Kristel"
+                text={t("reviews.review4.text")}
+                name={t("reviews.review4.author")}
                 color="white"
               />
             </div>

@@ -1,15 +1,40 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Triin Suurorg",
+      "description": "Triin Suurorg on suurte kogemustega hambaimplantoloog"
+    },
+
+    "about": {
+        "title": "Triin Suurorg | Minust",
+        "description": "Tutvuge minu hariduskäigu ja täiendkoolitustega. Olen pühendunud hambaimplantoloogiale juba üle 25 aasta."
+      },
+
+      "contact": {
+        "title": "Triin Suurorg | Kontakt",
+        "description": "Võtke ühendust implantoloog Triin Suurorgiga."
+      }
+  },
+
+
   "navigation": {
     "home": "Avaleht",
     "about": "Minust",
     "contact": "Kontakt"
   },
+
+  "footer": {
+    "copyright": "Kõik õigused kaitstud."
+  },
+
+
   "home": {
     "hero": {
       "title": "Rahu algab naeratusest",
       "description": "Parim tulemus võimalikult väheinvasiivse tehnika ja väikeste kulutustega. Hammaskonna taastamisel on minu peamine eesmärk saavutada loomulik tulemus. Parim hambaravitulemus on selline, kus tehtu jääb märkamatuks ja tundub justkui loomulik osa Teie naeratusest.",
       "button": "Loe rohkem"
     },
+
     "usp": {
       "usp1": {
         "title": "Holistiline lähenemine",
@@ -24,24 +49,254 @@
         "description": "Alates 2013. aastast töötan eelkõige Šveitsi tootja Straumann-i implantaatidega. Straumann-i implantaate valmistatakse patenteeritud kõrgekvaliteedilise titaani ja tsirkooniumi sulamist. SLActive-i implantaadid on spetsiaalses vedelikus, mis kiirendab veelgi nende ühildumist luuga. Straumann-i implantaadie kohta leiab rohkem infot klikkides <a>siia</a>."
       }
     },
+
+    "about": {
+      "title": "Parimad töövõtted ning tohutu kogemuste pagas",
+      "subtitle": "Minust",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "button": "Vaata CV-d"
+    },
+
     "reviews": {
-      "title": "Mida patsiendid räägivad",
+      "title": "Patsientide kogemused",
+      "subtitle": "Arvustused",
       "review1": {
-        "text": "Review text here",
-        "author": "Author name"
+        "text": "Dr. Triin on täpne, korrektne, sihikindel, usaldatav. Tunneb oma tööd ning teeb oma tööd südamega. On väga soe ja siiras inimene. Dr. Triinuga on meeldiv koostööd teha patsiendina. Soovitan kõigile.",
+        "author": "Jana"
+      },
+      "review2": {
+        "text": "Dr. Triin Suurorg on lihtsalt suurepärane arst! Ta võttis aega, et kõik protseduurid mulle rahulikult ja selgelt lahti seletada. Tema oskuslik töö ja hooliv suhtumine tegid kogu kogemuse palju meeldivamaks, kui oleksin osanud arvata. Olen väga rahul oma hambaimplantaatidega ja soovitan teda soojalt kõigile, kes otsivad professionaalset ja sõbralikku hambaarsti.",
+        "author": "Katrin"
+      },
+      "review3": {
+        "text": "Suur tänu dr. Triinule, kes tegi mu keerulise hambaimplantaadi protseduuri sujuvaks ja valutuks! Tema rahulik ja kindel lähenemine andis mulle kogu protsessi vältel kindlustunde. Lisaks on tema kliinikus mõnus ja sõbralik õhkkond, mis muudab hambaarsti külastamise isegi meeldivaks. Dr. Triin on tõesti oma ala meister!",
+        "author": "Annabel"
+      },
+      "review4": {
+        "text": "Dr. Triin Suurorg on professionaalne ja väga pühendunud oma tööle. Tema juures tunnen alati, et olen heades kätes. Hambaimplantaadi paigaldamine oli minu jaoks hirmutav mõte, kuid dr. Triinu oskuslik ja rahustav lähenemine hajutas kõik mu kahtlused. Tulemus on suurepärane ja olen väga rahul! Soovitan teda kindlasti!",
+        "author": "Kristjan"
       }
     }
   },
+
+
   "about": {
     "hero": {
-      "title": "Minust",
-      "description": "About page description"
+      "title": "Minust"
+    },
+
+    "left-side": {
+      "position": "Implantoloog",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt facilisis augue id pellentesque. Integer lorem tellus, scelerisque sed turpis in, consequat sollicitudin tellus. Morbi vitae porttitor nisi. Cras feugiat sed velit eget imperdiet. Donec fringilla augue sed lectus tincidunt, non sodales magna aliquet. Praesent eu augue ut libero accumsan pulvinar eget blandit augue. Fusce molestie facilisis est ut accumsan. Aenean eros leo, tincidunt at tincidunt ..."
+    },
+
+    "cv": {
+      "education": {
+        "title": "Hariduskäik",
+        "items": [
+          {
+            "years": "1989 - 1993",
+            "text": "Tartu Ülikool. Ravi eriala üliõpilane"
+          },
+          {
+            "years": "1993 - 1997",
+            "text": "Stockholmi Karolinska Instituut. Õpingud hammaste ravis, proteesimises ja kirurgias"
+          },
+          {
+            "years": "1999",
+            "text": "Implantoloogiaalane praktika, dr Pietro Cacciamani Dental Studio Milaanos"
+          },
+          {
+            "years": "2001 - 2007",
+            "text": "Tartu Ülikool. Kliinilise hambaravi residentuur e. spetsialistiõpe implantoloogia suunitlusega"
+          },
+          {
+            "years": "2001",
+            "text": "Implantoloogiaalane praktika, Dr Kari Luotio, Osfix International Ltd Soomes"
+          },
+          {
+            "years": "2003 - 2004",
+            "text": "TPERH näo-ja lõualuukirurgia osakond. Praktika näo- ja lõualuukirurgia alal"
+          },
+          {
+            "years": "2009 - 2010",
+            "text": "Structured implant course in Frankfurt University."
+          },
+          {
+            "years": "2024",
+            "text": "Pharma Nord Meistriklass: \"Tervise alustalad\""
+          }
+        ]
+      },
+      "courses": {
+        "title": "Täienduskoolitused",
+        "items": [
+          {
+            "years": "Oktoober 2000",
+            "text": "PHI spetsialistikoolitused implantoloogias"
+          },
+          {
+            "years": "Märts 2001",
+            "text": "Dr Juha Peltola, Wolfgang Wedenig seminar 'Implantaadid hambaravis'"
+          },
+          {
+            "years": "Aprill 2003",
+            "text": "3i Implant Innovations, Basic Restorative Hands-on Course"
+          },
+          {
+            "years": "Mai 2003",
+            "text": "Dr Bernhard Giesenhagen, 'Theoretical training and LIVE operations in advanced implantology'"
+          },
+          {
+            "years": "Märts 2004",
+            "text": "Frank Bryggen 'Computer-aided tomography in implantology'"
+          },
+          {
+            "years": "Mai 2004",
+            "text": "ITI-Weekend seminar Helsinki"
+          },
+          {
+            "years": "Mai 2004",
+            "text": "Dr Bernhard Giesenhagen 'Theoretical training and LIVE operations (augmentation techniques)'"
+          },
+          {
+            "years": "Mai 2004",
+            "text": "V Baltic Workshop on Osseointegrated Dental Implants"
+          },
+          {
+            "years": "Juuli 2004",
+            "text": "Baltic Workshop on Prosthesis"
+          },
+          {
+            "years": "September 2004",
+            "text": "13th Annual Scientific Meeting of EAO, Pariis"
+          },
+          {
+            "years": "April 2005",
+            "text": "Pro-Implant Education Center, Melsungen, Saksamaa"
+          },
+          {
+            "years": "April 2005",
+            "text": "Dentsply Friadent Annual Congress"
+          },
+          {
+            "years": "Mai 2005",
+            "text": "Dr Darius Pocebutas, kirurgiline praktika, Kaunas"
+          },
+          {
+            "years": "Juuni 2005",
+            "text": "Dr Juha Paatsama, Kokonaishammashoita Klinika, Helsinki"
+          },
+          {
+            "years": "September 2005",
+            "text": "14th Annual Meeting of EAO, München"
+          },
+          {
+            "years": "Mai 2006",
+            "text": "ITI Weekend seminar, Helsinki"
+          },
+          {
+            "years": "Juuni 2006",
+            "text": "Hannoveri Ülikooli haigla näo- ja lõualuukirurgia osakond, praktika kirurgias"
+          },
+          {
+            "years": "Detsember 2006",
+            "text": "Esteetiline tulemus implantoloogias. Praktiline implantoloogiaalane seminar. M.Stiller"
+          },
+          {
+            "years": "Jaanuar 2007",
+            "text": "Soft tissue management, sinus lift, bone augmentive procedures. Italy"
+          },
+          {
+            "years": "April 2007",
+            "text": "ITI World Symposium. New York"
+          },
+          {
+            "years": "Juuni 2007",
+            "text": "Live surgeries on dental implantology. 3D One step Augmentation, implantation. Dr Berndt Giesenhagen"
+          },
+          {
+            "years": "Oktoober 2007",
+            "text": "Esteetiline ja funktsionaalne harmoonia läbi kliinilise ja tehnilise perspektiivi. Dr Ashok Sethi ja MDT Peter Sochor (Inglismaa)"
+          },
+          {
+            "years": "Oktoober 2007",
+            "text": "16th Annual meeting of EAO in Barcelona"
+          },
+          {
+            "years": "Veebruar 2008",
+            "text": "Ilu ja kiiruse kontseptsioon implantoloogilise ravi protseduurides. Dr Orcan Yüksel (Saksamaa)"
+          },
+          {
+            "years": "Mai 2008",
+            "text": "6th Congress of Baltic Association for Maxillofacial and Plastic Surgery"
+          },
+          {
+            "years": "Mai 2010",
+            "text": "14th Densply Friadent World Symposium"
+          },
+          {
+            "years": "Märts 2012",
+            "text": "15th Densply Friadent World Symposium, Hamburg"
+          },
+          {
+            "years": "Mai 2013",
+            "text": "Osteology Symposium, Monaco"
+          },
+          {
+            "years": "Juuni 2013",
+            "text": "Piezoelectric Bone Surgery 2nd International Symposium, Florence Italy"
+          },
+          {
+            "years": "September 2014",
+            "text": "23rd Annual Scientific Meeting of the European Association of Osseointegration, Rome"
+          },
+          {
+            "years": "Juuni 2015",
+            "text": "8th Conference of the European Federation of Periodontology, London"
+          },
+          {
+            "years": "Märts 2017",
+            "text": "Advanced Bone and Soft Tissue Regeneration Techniques in Implant Therapy, Urban Regeneration Insitute"
+          },
+          {
+            "years": "November 2022",
+            "text": "International NeoArch hands on course by Dr Pedro Rodrigues, Braga Portugal"
+          }
+        ]
+      },
+
+      "articles": {
+        "title": "Artiklid",
+        "items": [
+          {
+            "years": "Kodutoher, august 2004",
+            "text": "\"Naeratus nagu pärl\""
+          },
+          {
+            "years": "Kodutoher, aprill 2008",
+            "text": "\"Implantaat, lünkliku naeratuse päästeingel\""
+          },
+          {
+            "years": "Kodutoher, juuni 2008",
+            "text": "\"Naeratus number kolm\""
+          },
+          {
+            "years": "Kodutoher, mai 2010",
+            "text": "\"Kas implantaadid sobivad kõigile?\""
+          },
+          {
+            "years": "Terviseleht, aprill 2018",
+            "text": "\"Patsiendisõbralik implantoloogia\""
+          }
+        ]
+      }
     }
   },
+
   "contact": {
     "hero": {
-      "title": "Kontakt",
-      "description": "Contact page description"
+      "title": "Kontakt"
     }
   }
 }

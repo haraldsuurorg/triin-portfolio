@@ -3,13 +3,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
-import type { Metadata } from "next";
 import "../globals.css";
-
-// export const metadata: Metadata = {
-//   title: "Triin Suurorg",
-//   description: "Triin Suurorg Portfolio",
-// };
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));

@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Metadata } from "next";
+import { routing } from "@/i18n/routing";
 
 import Navbar from "@/app/components/navbar/navbar";
 import Footer from "@/app/components/footer/footer";
@@ -6,7 +9,27 @@ import IconBox from "@/app/components/iconbox/iconbox";
 import CVBox from "@/app/components/cvbox/cvbox";
 
 
-export default function About() {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations('metadata.about');
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale: string) => ({ locale }));
+}
+
+export default async function About({params}: {params: Promise<{locale: string}>}) {
+
+  const {locale} = await params;
+
+  setRequestLocale(locale);
+
+  const t = await getTranslations("about");
+
     return (
       <div className="bg-background">
         <Navbar />
@@ -15,7 +38,7 @@ export default function About() {
           {/* Hero section */}
           <section id="hero" className="py-12 md:py-24">
             <div className="container">
-              <h1 className="text-center">Minust</h1>
+              <h1 className="text-center">{t('hero.title')}</h1>
             </div>
           </section>
 
@@ -35,7 +58,7 @@ export default function About() {
                 </div>
 
                 <h3 className="pt-6">Dr. Triin Suurorg</h3>
-                <p className="pb-8 text-sm">Implantoloog</p>
+                <p className="pb-8 text-sm">{t('left-side.position')}</p>
                 <div className="flex flex-col gap-4 py-8 border-y border-[#767471] border-opacity-30">
                   <IconBox 
                     iconSrc="/icons/map.svg"
@@ -51,70 +74,32 @@ export default function About() {
                     link="mailto:triinsuurorg@gmail.com"
                   />
                 </div>
-                  <p className="mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt facilisis augue id pellentesque. Integer lorem tellus, scelerisque sed turpis in, consequat sollicitudin tellus. Morbi vitae porttitor nisi. Cras feugiat sed velit eget imperdiet. Donec fringilla augue sed lectus tincidunt, non sodales magna aliquet. Praesent eu augue ut libero accumsan pulvinar eget blandit augue. Fusce molestie facilisis est ut accumsan. Aenean eros leo, tincidunt at tincidunt nec, egestas vel turpis. Duis egestas dui id dui dapibus ornare. Praesent est dui, porttitor ac arcu at, posuere aliquet nulla. Nam aliquam velit eu nunc facilisis elementum.</p>
+                  <p className="mt-8">{t('left-side.description')}</p>
               </div>
 
               {/* <!-- Right side--> */}
               <div className="flex flex-col w-full pt-8 md:pt-0 md:w-2/3 md:ml-12">
-                <h3 className="text-center md:text-left">Hariduskäik</h3>
+                <h3 className="text-center md:text-left">{t('cv.education.title')}</h3>
                 <div className="flex flex-col gap-8 mt-4 py-8 border-t border-[#767471] border-opacity-30">
                   <div className="flex flex-col md:grid md:grid-cols-[max-content,1fr] gap-y-8 gap-x-6 gap-4">
-                    <CVBox years="1989 - 1993" text="Tartu Ülikool. Ravi eriala üliõpilane" />
-                    <CVBox years="1993 - 1997" text="Stockholmi Karolinska Instituut. Õpingud hammaste ravis, proteesimises ja kirurgias" />
-                    <CVBox years="1999"      text="Implantoloogiaalane praktika, dr Pietro Cacciamani Dental Studio Milaanos" />
-                    <CVBox years="2001 - 2007" text="Tartu Ülikool. Kliinilise hambaravi residentuur e. spetsialistiõpe implantoloogia suunitlusega" />
-                    <CVBox years="2001"      text="Implantoloogiaalane praktika, Dr Kari Luotio, Osfix International Ltd Soomes" />
-                    <CVBox years="2003 - 2004" text="TPERH näo-ja lõualuukirurgia osakond. Praktika näo- ja lõualuukirurgia alal" />
-                    <CVBox years="2009 - 2010" text="Structured implant course in Frankfurt University." />
-                    <CVBox years="2024" text="Pharma Nord Meistriklass: “Tervise alustalad”" />
+                    {t.raw('cv.education.items').map((item: { years: string, text: string }, index: number) => (
+                      <CVBox key={index} years={item.years} text={item.text} />
+                    ))}
                   </div>
                 </div>
 
-                <h3 className="mt-8 text-center md:text-left">Täienduskoolitused</h3>
+                <h3 className="mt-8 text-center md:text-left">{t('cv.courses.title')}</h3>
                 <div className="flex flex-col md:grid md:grid-cols-[max-content,1fr] gap-y-8 gap-x-6 mt-4 py-8 border-t border-[#767471] border-opacity-30">
-                  <CVBox years="Oktoober 2000" text="PHI spetsialistikoolitused implantoloogias"/>
-                  <CVBox years="Märts 2001" text="Dr Juha Peltola, Wolfgang Wedenig seminar 'Implantaadid hambaravis'" />
-                  <CVBox years="Aprill 2003" text="3i Implant Innovations, Basic Restorative Hands-on Course" />
-                  <CVBox years="Mai 2003" text="Dr Bernhard Giesenhagen, 'Theoretical training and LIVE operations in advanced implantology'" />
-                  <CVBox years="Märts 2004" text="Frank Bryggen 'Computer-aided tomography in implantology'" />
-                  <CVBox years="Mai 2004" text="ITI-Weekend seminar Helsinki" />
-                  <CVBox years="Mai 2004" text="Dr Bernhard Giesenhagen 'Theoretical training and LIVE operations (augmentation techniques)'" />
-                  <CVBox years="Mai 2004" text="V Baltic Workshop on Osseointegrated Dental Implants" />
-                  <CVBox years="Juuli 2004" text="Baltic Workshop on Prosthesis" />
-                  <CVBox years="September 2004" text="13th Annual Scientific Meeting of EAO, Pariis" />
-                  <CVBox years="April 2005" text="Pro-Implant Education Center, Melsungen, Saksamaa" />
-                  <CVBox years="April 2005" text="Dentsply Friadent Annual Congress" />
-                  <CVBox years="Mai 2005" text="Dr Darius Pocebutas, kirurgiline praktika, Kaunas" />
-                  <CVBox years="Juuni 2005" text="Dr Juha Paatsama, Kokonaishammashoita Klinika, Helsinki" />
-                  <CVBox years="September 2005" text="14th Annual Meeting of EAO, München" />
-                  <CVBox years="Mai 2006" text="ITI Weekend seminar, Helsinki" />
-                  <CVBox years="Juuni 2006" text="Hannoveri Ülikooli haigla näo- ja lõualuukirurgia osakond, praktika kirurgias" />
-                  <CVBox years="Detsember 2006" text="Esteetiline tulemus implantoloogias. Praktiline implantoloogiaalane seminar. M.Stiller" />
-                  <CVBox years="Jaanuar 2007" text="Soft tissue management, sinus lift, bone augmentive procedures. Italy" />
-                  <CVBox years="April 2007" text="ITI World Symposium. New York" />
-                  <CVBox years="Juuni 2007" text="Live surgeries on dental implantology. 3D One step Augmentation, implantation. Dr Berndt Giesenhagen" />
-                  <CVBox years="Oktoober 2007" text="Esteetiline ja funktsionaalne harmoonia läbi kliinilise ja tehnilise perspektiivi. Dr Ashok Sethi ja MDT Peter Sochor (Inglismaa)" />
-                  <CVBox years="Oktoober 2007" text="16th Annual meeting of EAO in Barcelona" />
-                  <CVBox years="Veebruar 2008" text="Ilu ja kiiruse kontseptsioon implantoloogilise ravi protseduurides. Dr Orcan Yüksel (Saksamaa)" />
-                  <CVBox years="Mai 2008" text="6th Congress of Baltic Association for Maxillofacial and Plastic Surgery" />
-                  <CVBox years="Mai 2010" text="14th Densply Friadent World Symposium" />
-                  <CVBox years="Märts 2012" text="15th Densply Friadent World Symposium, Hamburg" />
-                  <CVBox years="Mai 2013" text="Osteology Symposium, Monaco" />
-                  <CVBox years="Juuni 2013" text="Piezoelectric Bone Surgery 2nd International Symposium, Florence Italy" />
-                  <CVBox years="September 2014" text="23rd Annual Scientific Meeting of the European Association of Osseointegration, Rome" />
-                  <CVBox years="Juuni 2015" text="8th Conference of the European Federation of Periodontology, London" />
-                  <CVBox years="Märts 2017" text="Advanced Bone and Soft Tissue Regeneration Techniques in Implant Therapy, Urban Regeneration Insitute" />
-                  <CVBox years="November 2022" text="International NeoArch hands on course by Dr Pedro Rodrigues, Braga Portugal" />
-
+                  {t.raw('cv.courses.items').map((item: { years: string, text: string }, index: number) => (
+                    <CVBox key={index} years={item.years} text={item.text} />
+                  ))}
                 </div>
 
                 <h3 className="mt-8 text-center md:text-left">Artiklid</h3>
                 <div className="flex flex-col md:grid md:grid-cols-[max-content,1fr] gap-y-8 gap-x-6 mt-4 py-8 border-t border-[#767471] border-opacity-30">
-                  <CVBox years="Kodutoher, august 2004"   text="„Naeratus nagu pärl“" />
-                  <CVBox years="Kodutoher, aprill 2008"   text="„Implantaat, lünkliku naeratuse päästeingel“" />
-                  <CVBox years="Kodutoher, juuni 2008"    text="„Naeratus number kolm“" />
-                  <CVBox years="Kodutoher, mai 2010"      text="„Kas implantaadid sobivad kõigile?“" />
-                  <CVBox years="Terviseleht, aprill 2018" text="“Patsiendisõbralik implantoloogia”" />
+                  {t.raw('cv.articles.items').map((item: { years: string, text: string }, index: number) => (
+                    <CVBox key={index} years={item.years} text={item.text} />
+                  ))}
                 </div>
               </div>
             </div>

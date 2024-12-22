@@ -8,7 +8,7 @@ export default function LocaleSwitcher() {
   const pathname = usePathname();
   const params = useParams();
   const currentLocale = (params.locale as string) || routing.defaultLocale;
-  
+
   // Remove locale prefix from pathname if it exists
   const pathnameWithoutLocale = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
 
@@ -16,15 +16,15 @@ export default function LocaleSwitcher() {
     <div className="flex gap-4">
       {routing.locales.map((locale) => {
         const isActive = currentLocale === locale;
-        
+
         return (
           <Link
             key={locale}
             href={pathnameWithoutLocale}
             locale={locale}
             className={`uppercase
-              ${isActive 
-                ? 'text-primary hover:text-heading' 
+              ${isActive
+                ? 'text-primary hover:text-heading'
                 : 'text-heading hover:text-primary'
               }`}
           >
