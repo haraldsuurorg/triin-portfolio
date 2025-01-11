@@ -44,20 +44,16 @@ export default async function Contact({params}: {params: Promise<{locale: string
         <section id="contact" className="py-12 md:py-24 bg-white">
           <div className="container flex flex-col md:flex-row-reverse">
             <div className="flex flex-col gap-6 justify-center md:w-1/2">
-              <p className="subheading">Tule vastuvõtule</p>
-              <h2 className="text-heading">Vali endale meelepärane kliinik</h2>
-              <p>
-                Praegusel hetkel töötan kahes erinevas kliinikus Tallinnas.
-                Kliiniku valimisel soovitan lähtuda asukohast. Mõlema kliiniku
-                juures on patsientidele tasuta parkimine.
-              </p>
+              <p className="subheading">{t('clinic.subtitle')}</p>
+              <h2 className="text-heading">{t('clinic.title')}</h2>
+              <p>{t('clinic.description')}</p>
 
               <div className="flex flex-col gap-4 items-end">
                 <IconBox
                   iconSrc="/icons/right-arrow.svg"
                   alt="Clinic link"
-                  text="Bliss Hambaravi"
-                  link="https://bdc.ee/kontakt/"
+                  text={t('clinic.clinic1.text')}
+                  link={t('clinic.clinic1.link')}
                   className="flex-row-reverse w-fit"
                   newTab={true}
                 />
@@ -65,8 +61,8 @@ export default async function Contact({params}: {params: Promise<{locale: string
                 <IconBox
                   iconSrc="/icons/right-arrow.svg"
                   alt="Clinic link"
-                  text="Pirita Hambaravi"
-                  link="https://piritahambaravi.ee/kontakt/"
+                  text={t('clinic.clinic2.text')}
+                  link={t('clinic.clinic2.link')}
                   className="flex-row-reverse w-fit"
                   newTab={true}
                 />
@@ -88,13 +84,8 @@ export default async function Contact({params}: {params: Promise<{locale: string
         {/* Contact form section */}
         <section id="contact-form" className="py-12 md:py-24 bg-background">
           <div className="container flex flex-col items-center gap-6 md:w-3/4 lg:w-1/2 lg:min-w-[750px]">
-            <p className="subheading">Saada kiri</p>
-            <p className="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa
-              euismod ultrices. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit
-            </p>
+            <p className="subheading">{t('contact.hero.title')}</p>
+            <p className="text-center">{t('contact.hero.description')}</p>
 
             <form className="flex flex-col gap-4 p-8 pb-6 w-full lg:w-3/4">
               <div className="flex flex-col gap-2">
@@ -103,7 +94,7 @@ export default async function Contact({params}: {params: Promise<{locale: string
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Nimi"
+                  placeholder={t('contact.form.name')}
                   className="border border-[#767471] border-opacity-30 p-2 bg-transparent"
                 />
 
@@ -112,7 +103,7 @@ export default async function Contact({params}: {params: Promise<{locale: string
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder={t('contact.form.email')}
                   className="border border-[#767471] border-opacity-30 p-2 bg-transparent"
                 />
 
@@ -120,12 +111,12 @@ export default async function Contact({params}: {params: Promise<{locale: string
                 <textarea
                   id="message"
                   name="message"
-                  placeholder="Sõnum"
+                  placeholder={t('contact.form.message')}
                   className="h-20 border border-[#767471] border-opacity-30 p-2 bg-transparent"
                 />
 
                 <Button className="self-center mt-4" href="#">
-                  Saada
+                  {t('contact.form.button')}
                 </Button>
               </div>
             </form>

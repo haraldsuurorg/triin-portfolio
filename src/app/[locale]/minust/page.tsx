@@ -95,7 +95,7 @@ export default async function About({params}: {params: Promise<{locale: string}>
                   ))}
                 </div>
 
-                <h3 className="mt-8 text-center md:text-left">Artiklid</h3>
+                <h3 className="mt-8 text-center md:text-left">{t('cv.articles.title')}</h3>
                 <div className="flex flex-col md:grid md:grid-cols-[max-content,1fr] gap-y-8 gap-x-6 mt-4 py-8 border-t border-[#767471] border-opacity-30">
                   {t.raw('cv.articles.items').map((item: { years: string, text: string }, index: number) => (
                     <CVBox key={index} years={item.years} text={item.text} />

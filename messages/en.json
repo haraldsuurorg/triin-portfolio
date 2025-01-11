@@ -53,7 +53,7 @@
       "about": {
         "title": "Best practices and vast experience",
         "subtitle": "About me",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "I have dedicated my entire life to implantology. In addition to knowledge in implantology, I have also advanced myself in holistic medicine. My goal is to provide patients with comprehensive and modern care that ensures the best results. I believe that continuous self-improvement is key to delivering the highest quality service.",
         "button": "View CV"
       },
 
@@ -87,7 +87,7 @@
 
       "left-side": {
       "position": "Implantologist",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt facilisis augue id pellentesque. Integer lorem tellus, scelerisque sed turpis in, consequat sollicitudin tellus. Morbi vitae porttitor nisi. Cras feugiat sed velit eget imperdiet. Donec fringilla augue sed lectus tincidunt, non sodales magna aliquet. Praesent eu augue ut libero accumsan pulvinar eget blandit augue. Fusce molestie facilisis est ut accumsan. Aenean eros leo, tincidunt at tincidunt ..."
+        "description": "I have dedicated my entire life to implantology. In addition to knowledge in implantology, I have also advanced myself in holistic medicine. My goal is to provide patients with comprehensive and modern care that ensures the best results. I believe that continuous self-improvement is key to delivering the highest quality service."
       },
 
       "cv": {
@@ -297,6 +297,33 @@
     "contact": {
       "hero": {
         "title": "Contact"
+      },
+
+      "clinic": {
+        "subtitle": "Book an appointment",
+        "title": "Choose a clinic",
+        "description": "Currently, I work in two clinics in Tallinn. When choosing a clinic, I recommend deciding based on the location. Both clinics offer free parking for patients.",
+        "clinic1": {
+          "text": "Bliss Dental Clinic",
+          "link": "https://bdc.ee/en/"
+        },
+        "clinic2": {
+          "text": "Pirita Dental Clinic",
+          "link": "https://piritahambaravi.ee"
+        }
+      },
+
+      "contact": {
+        "hero": {
+          "title": "Send a message",
+          "description": "If you want to contact me, please fill out the form below and I will respond to you as soon as possible."
+        },
+        "form": {
+          "name": "Name",
+          "email": "Email",
+          "message": "Message",
+          "button": "Send"
+        }
       }
     }
   }

@@ -53,7 +53,7 @@
     "about": {
       "title": "Parimad töövõtted ning tohutu kogemuste pagas",
       "subtitle": "Minust",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Olen implantoloogiale pühendanud kogu oma elu. Lisaks implantoloogiaalastele teadmistele olen täiendanud ennast ka holistilises meditsiinis. Minu eesmärk on pakkuda patsientidele terviklikku ja kaasaegset ravi, mis tagab parimad tulemused. Usun, et pidev enesetäiendamine on võtmetähtsusega, et pakkuda kõrgeima kvaliteediga teenust.",
       "button": "Vaata CV-d"
     },
 
@@ -87,7 +87,7 @@
 
     "left-side": {
       "position": "Implantoloog",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt facilisis augue id pellentesque. Integer lorem tellus, scelerisque sed turpis in, consequat sollicitudin tellus. Morbi vitae porttitor nisi. Cras feugiat sed velit eget imperdiet. Donec fringilla augue sed lectus tincidunt, non sodales magna aliquet. Praesent eu augue ut libero accumsan pulvinar eget blandit augue. Fusce molestie facilisis est ut accumsan. Aenean eros leo, tincidunt at tincidunt ..."
+      "description": "Olen implantoloogiale pühendanud kogu oma elu. Lisaks implantoloogiaalastele teadmistele olen täiendanud ennast ka holistilises meditsiinis. Minu eesmärk on pakkuda patsientidele terviklikku ja kaasaegset ravi, mis tagab parimad tulemused. Usun, et pidev enesetäiendamine on võtmetähtsusega, et pakkuda kõrgeima kvaliteediga teenust."
     },
 
     "cv": {
@@ -297,6 +297,33 @@
   "contact": {
     "hero": {
       "title": "Kontakt"
+    },
+
+    "clinic": {
+      "subtitle": "Tule vastuvõtule",
+      "title": "Vali endale meelepärane kliinik",
+      "description": "Praegusel hetkel töötan kahes erinevas kliinikus Tallinnas. Kliiniku valimisel soovitan lähtuda asukohast. Mõlema kliiniku juures on patsientidele tasuta parkimine.",
+      "clinic1": {
+        "text": "Bliss Hambaravi",
+        "link": "https://bdc.ee"
+      },
+      "clinic2": {
+        "text": "Pirita Hambaravi",
+        "link": "https://piritahambaravi.ee"
+      }
+    },
+
+    "contact": {
+      "hero": {
+        "title": "Saada kiri",
+        "description": "Kui soovid minuga ühendust võtta, siis palun täida allolev kontaktivorm ning vastan sulle esimesel võimalusel."
+      },
+      "form": {
+        "name": "Nimi",
+        "email": "Email",
+        "message": "Sõnum",
+        "button": "Saada"
+      }
     }
   }
 }
