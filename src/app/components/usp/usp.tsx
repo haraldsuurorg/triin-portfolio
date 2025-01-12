@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 
 interface USPProps {
     icon: string;
     title: string;
-    description: string;
+    description: ReactNode;
     className?: string;
 }
 
@@ -18,10 +19,7 @@ export default function USP({ icon, title, description, className }: USPProps) {
                 className="bg-white p-3"
             />
             <h3 className="text-center">{title}</h3>
-            <p
-                className="text-center"
-                dangerouslySetInnerHTML={{ __html: description }}
-            />
+            <p className="text-center">{description}</p>
         </div>
     )
 }

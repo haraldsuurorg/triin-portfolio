@@ -1,0 +1,332 @@
+{ 
+    "metadata": {
+      "home": {
+        "title": "Triin Suurorg",
+        "description": "Triin Suurorg is a highly experienced dental implantologist"
+      },
+
+      "about": {
+        "title": "Triin Suurorg | About me",
+        "description": "Learn about my education and additional training. I have been dedicated to dental implantology for over 25 years."
+      },
+
+      "contact": {
+        "title": "Triin Suurorg | Contact",
+        "description": "Contact dental implantologist Triin Suurorg."
+      }
+    },
+
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact"
+    },
+
+
+    "footer": {
+      "copyright": "All rights reserved."
+    },
+
+
+    "home": {
+      "hero": {
+        "title": "Peace begins with a smile",
+        "description": "The best result with the least invasive technique and the lowest cost. When restoring your teeth, my main goal is to achieve a natural result. The best dental result is one where what has been done is unnoticeable and feels like a natural part of your smile.",
+        "button": "Read more"
+      },
+
+      "usp": {
+        "usp1": {
+          "title": "Holistic approach",
+          "description": "I believe that dental health is a crucial part of overall health and has a significant impact on self-esteem. My mother, Teresa, once said: \"Peace begins with a smile\". In the dental process, I use the least amount of artificial materials and routine implantation followed by antibiotics."
+        },
+        "usp2": {
+          "title": "Extensive experience",
+          "description": "Since graduating from university in 1998, I have specialized in dental implants and other dental procedures. Over the past 15 years, I have only worked with implants and do not deal with other dental procedures. I have encountered many complex dental cases. Often, the entire dental implant was replaced."
+        },
+        "usp3": {
+          "title": "Best tools",
+          "description": "Since 2013, I have primarily worked with Swiss manufacturer Straumann implants. Straumann implants are made from high-quality titanium and zirconium alloy. SLActive implants are in a special liquid that accelerates their integration with the bone. You can find more information about Straumann implants by clicking <a>here</a>."
+        }
+      },
+
+      "about": {
+        "title": "Best practices and vast experience",
+        "subtitle": "About me",
+        "description": "I have dedicated my entire life to implantology. In addition to knowledge in implantology, I have also advanced myself in holistic medicine. My goal is to provide patients with comprehensive and modern care that ensures the best results. I believe that continuous self-improvement is key to delivering the highest quality service.",
+        "button": "View CV"
+      },
+
+      "reviews": {
+        "title": "Patient experiences",
+        "subtitle": "Reviews",
+        "review1": {
+          "text": "Dr. Triin is precise, correct, compassionate, and trustworthy. She know her work and does it with immacualte concentration. She is very kind and gentle. It is pleasant to work with Dr. Triin as a patient. I recommend it to everyone.",
+          "author": "Jana"
+        },
+        "review2": {
+          "text": "Dr. Triin Suurorg is a great dentist! She took the time to explain all the procedures to me in a clear and concise manner. Her skillful work and compassionate approach made the entire experience much more enjoyable than I could have imagined. I am very satisfied with my dental implants and recommend her to everyone looking for a professional and friendly dentist.",
+          "author": "Katrin"
+        },
+        "review3": {
+          "text": "Thank you, Dr. Triin, for making my complex dental implant procedure smooth and painless! Her kind and confident approach gave me peace of mind throughout the process. The clinic is also very nice and friendly, making the dental visit even more enjoyable. Dr. Triin is truly a master in her field!",
+          "author": "Annabel"
+        },
+        "review4": {
+          "text": "Dr. Triin Suurorg is a professional and very dedicated to her work. She is always very kind and gentle. I always feel like I am in good hands. The dental implant procedure was a daunting thought for me, but Dr. Triin's skillful and reassuring approach eased all my concerns. The result is great and I am very satisfied! I highly recommend her!",
+          "author": "Kristjan"
+        }
+      }
+    },
+
+
+    "about": {
+      "hero": {
+        "title": "About me"
+      },
+
+      "left-side": {
+      "position": "Implantologist",
+        "description": "I have dedicated my entire life to implantology. In addition to knowledge in implantology, I have also advanced myself in holistic medicine. My goal is to provide patients with comprehensive and modern care that ensures the best results. I believe that continuous self-improvement is key to delivering the highest quality service."
+      },
+
+      "cv": {
+        "education": {
+          "title": "Education",
+          "items": [
+            {
+              "years": "1989 - 1993",
+              "text": "University of Tartu. Medical student"
+            },
+            {
+              "years": "1993 - 1997",
+              "text": "Karolinska Institute Stockholm. Studies in dental treatment, prosthetics and surgery"
+            },
+            {
+              "years": "1999",
+              "text": "Implantology practice, dr Pietro Cacciamani Dental Studio in Milan"
+            },
+            {
+              "years": "2001 - 2007",
+              "text": "University of Tartu. Clinical dentistry residency i.e. specialist training with focus on implantology"
+            },
+            {
+              "years": "2001",
+              "text": "Implantology practice, Dr Kari Luotio, Osfix International Ltd in Finland"
+            },
+            {
+              "years": "2003 - 2004",
+              "text": "TPERH maxillofacial surgery department. Practice in maxillofacial surgery"
+            },
+            {
+              "years": "2009 - 2010",
+              "text": "Structured implant course in Frankfurt University"
+            },
+            {
+              "years": "2024",
+              "text": "Pharma Nord Masterclass: \"Foundations of Health\""
+            }
+          ]
+        },
+        "courses": {
+          "title": "Continuing Education",
+          "items": [
+            {
+              "years": "October 2000",
+              "text": "PHI specialist training in implantology"
+            },
+            {
+              "years": "March 2001",
+              "text": "Dr Juha Peltola, Wolfgang Wedenig seminar 'Implants in dentistry'"
+            },
+            {
+              "years": "April 2003",
+              "text": "3i Implant Innovations, Basic Restorative Hands-on Course"
+            },
+            {
+              "years": "May 2003",
+              "text": "Dr Bernhard Giesenhagen, 'Theoretical training and LIVE operations in advanced implantology'"
+            },
+            {
+              "years": "March 2004",
+              "text": "Frank Bryggen 'Computer-aided tomography in implantology'"
+            },
+            {
+              "years": "May 2004",
+              "text": "ITI-Weekend seminar Helsinki"
+            },
+            {
+              "years": "May 2004",
+              "text": "Dr Bernhard Giesenhagen 'Theoretical training and LIVE operations (augmentation techniques)'"
+            },
+            {
+              "years": "May 2004",
+              "text": "V Baltic Workshop on Osseointegrated Dental Implants"
+            },
+            {
+              "years": "July 2004",
+              "text": "Baltic Workshop on Prosthesis"
+            },
+            {
+              "years": "September 2004",
+              "text": "13th Annual Scientific Meeting of EAO, Paris"
+            },
+            {
+              "years": "April 2005",
+              "text": "Pro-Implant Education Center, Melsungen, Germany"
+            },
+            {
+              "years": "April 2005",
+              "text": "Dentsply Friadent Annual Congress"
+            },
+            {
+              "years": "May 2005",
+              "text": "Dr Darius Pocebutas, surgical practice, Kaunas"
+            },
+            {
+              "years": "June 2005",
+              "text": "Dr Juha Paatsama, Kokonaishammashoita Clinic, Helsinki"
+            },
+            {
+              "years": "September 2005",
+              "text": "14th Annual Meeting of EAO, Munich"
+            },
+            {
+              "years": "May 2006",
+              "text": "ITI Weekend seminar, Helsinki"
+            },
+            {
+              "years": "June 2006",
+              "text": "Hannover University Hospital Department of Maxillofacial Surgery, practice in surgery"
+            },
+            {
+              "years": "December 2006",
+              "text": "Aesthetic results in implantology. Practical implantology seminar. M.Stiller"
+            },
+            {
+              "years": "January 2007",
+              "text": "Soft tissue management, sinus lift, bone augmentive procedures. Italy"
+            },
+            {
+              "years": "April 2007",
+              "text": "ITI World Symposium. New York"
+            },
+            {
+              "years": "June 2007",
+              "text": "Live surgeries on dental implantology. 3D One step Augmentation, implantation. Dr Berndt Giesenhagen"
+            },
+            {
+              "years": "October 2007",
+              "text": "Aesthetic and functional harmony through clinical and technical perspective. Dr Ashok Sethi and MDT Peter Sochor (England)"
+            },
+            {
+              "years": "October 2007",
+              "text": "16th Annual meeting of EAO in Barcelona"
+            },
+            {
+              "years": "February 2008",
+              "text": "Beauty and speed concept in implantological treatment procedures. Dr Orcan Yüksel (Germany)"
+            },
+            {
+              "years": "May 2008",
+              "text": "6th Congress of Baltic Association for Maxillofacial and Plastic Surgery"
+            },
+            {
+              "years": "May 2010",
+              "text": "14th Densply Friadent World Symposium"
+            },
+            {
+              "years": "March 2012",
+              "text": "15th Densply Friadent World Symposium, Hamburg"
+            },
+            {
+              "years": "May 2013",
+              "text": "Osteology Symposium, Monaco"
+            },
+            {
+              "years": "June 2013",
+              "text": "Piezoelectric Bone Surgery 2nd International Symposium, Florence Italy"
+            },
+            {
+              "years": "September 2014",
+              "text": "23rd Annual Scientific Meeting of the European Association of Osseointegration, Rome"
+            },
+            {
+              "years": "June 2015",
+              "text": "8th Conference of the European Federation of Periodontology, London"
+            },
+            {
+              "years": "March 2017",
+              "text": "Advanced Bone and Soft Tissue Regeneration Techniques in Implant Therapy, Urban Regeneration Institute"
+            },
+            {
+              "years": "November 2022",
+              "text": "International NeoArch hands on course by Dr Pedro Rodrigues, Braga Portugal"
+            }
+          ]
+        },
+
+        "articles": {
+          "title": "Articles",
+          "items": [
+            {
+              "years": "Kodutoher, August 2004",
+              "text": "\"Smile like a pearl\""
+            },
+            {
+              "years": "Kodutoher, April 2008",
+              "text": "\"Implant, the guardian angel of a gapped smile\""
+            },
+            {
+              "years": "Kodutoher, June 2008",
+              "text": "\"Smile number three\""
+            },
+            {
+              "years": "Kodutoher, May 2010",
+              "text": "\"Are implants suitable for everyone?\""
+            },
+            {
+              "years": "Terviseleht, April 2018",
+              "text": "\"Patient-friendly implantology\""
+            }
+          ]
+        }
+      }
+    },
+
+    "contact": {
+      "hero": {
+        "title": "Contact"
+      },
+
+      "clinic": {
+        "subtitle": "Book an appointment",
+        "title": "Choose a clinic",
+        "description": "Currently, I work in two clinics in Tallinn. When choosing a clinic, I recommend deciding based on the location. Both clinics offer free parking for patients.",
+        "clinic1": {
+          "text": "Bliss Dental Clinic",
+          "link": "https://bdc.ee/en/"
+        },
+        "clinic2": {
+          "text": "Pirita Dental Clinic",
+          "link": "https://piritahambaravi.ee"
+        }
+      },
+
+      "contact": {
+        "hero": {
+          "title": "Send a message",
+          "description": "If you want to contact me, please fill out the form below and I will respond to you as soon as possible."
+        },
+        "form": {
+          "name": "Name",
+          "email": "Email",
+          "message": "Message",
+          "button": "Send",
+          "buttonLoading": "Sending...",
+          "successMessage": "Thank you for the message! I will respond to you as soon as possible.",
+          "errorMessage": "There was an error sending the message. Please try again."
+        }
+      }
+    }
+  }
