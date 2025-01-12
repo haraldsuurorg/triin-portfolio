@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Navbar from "@/app/components/navbar/navbar";
 import Footer from "@/app/components/footer/footer";
 import IconBox from "@/app/components/iconbox/iconbox";
-import Button from "@/app/components/button/button";
+import ContactForm from "@/app/components/contactform/contact-form";
 import { routing } from "@/i18n/routing";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -87,39 +87,17 @@ export default async function Contact({params}: {params: Promise<{locale: string
             <p className="subheading">{t('contact.hero.title')}</p>
             <p className="text-center">{t('contact.hero.description')}</p>
 
-            <form className="flex flex-col gap-4 p-8 pb-6 w-full lg:w-3/4">
-              <div className="flex flex-col gap-2">
-                {/* <label htmlFor="name">Nimi</label> */}
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder={t('contact.form.name')}
-                  className="border border-[#767471] border-opacity-30 p-2 bg-transparent"
-                />
-
-                {/* <label htmlFor="email">Email</label> */}
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder={t('contact.form.email')}
-                  className="border border-[#767471] border-opacity-30 p-2 bg-transparent"
-                />
-
-                {/* <label htmlFor="message">Sõnum</label> */}
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder={t('contact.form.message')}
-                  className="h-20 border border-[#767471] border-opacity-30 p-2 bg-transparent"
-                />
-
-                <Button className="self-center mt-4" href="#">
-                  {t('contact.form.button')}
-                </Button>
-              </div>
-            </form>
+            <ContactForm
+              translations={{
+                name: t('contact.form.name'),
+                email: t('contact.form.email'),
+                message: t('contact.form.message'),
+                button: t('contact.form.button'),
+                buttonLoading: t('contact.form.buttonLoading'),
+                successMessage: t('contact.form.successMessage'),
+                errorMessage: t('contact.form.errorMessage'),
+              }}
+            />
           </div>
         </section>
       </main>

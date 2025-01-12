@@ -322,7 +322,10 @@
           "name": "Name",
           "email": "Email",
           "message": "Message",
-          "button": "Send"
+          "button": "Send",
+          "buttonLoading": "Sending...",
+          "successMessage": "Thank you for the message! I will respond to you as soon as possible.",
+          "errorMessage": "There was an error sending the message. Please try again."
         }
       }
     }

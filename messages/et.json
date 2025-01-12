@@ -322,7 +322,10 @@
         "name": "Nimi",
         "email": "Email",
         "message": "Sõnum",
-        "button": "Saada"
+        "button": "Saada",
+        "buttonLoading": "Saadan...",
+        "successMessage": "Sinu sõnum on teele saadetud! Vastan sulle esimesel võimalusel.",
+        "errorMessage": "Sõnumi saatmise ajal tekkis viga. Palun proovi uuesti."
       }
     }
   }
