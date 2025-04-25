@@ -75,7 +75,7 @@ export default function ContactForm({ translations }: ContactFormProps) {
                     setLoading(false);
                     alert(translations.successMessage);
                     setForm({ name: '', email: '', message: '' });
-                }, 
+                },
                 () => {
                     setLoading(false);
                     alert(translations.errorMessage);
@@ -100,7 +100,7 @@ export default function ContactForm({ translations }: ContactFormProps) {
           name="name"
           value={form.name}
           placeholder={translations.name}
-          className="border border-[#767471] border-opacity-30 p-2 bg-transparent"
+          className="border border-[#767471] border-opacity-30 p-2 bg-transparent text-black"
           onChange={handleChange}
           required
         />
@@ -110,7 +110,7 @@ export default function ContactForm({ translations }: ContactFormProps) {
           name="email"
           value={form.email}
           placeholder={translations.email}
-          className="border border-[#767471] border-opacity-30 p-2 bg-transparent"
+          className="border border-[#767471] border-opacity-30 p-2 bg-transparent text-black"
           onChange={handleChange}
           required
         />
@@ -119,7 +119,7 @@ export default function ContactForm({ translations }: ContactFormProps) {
           name="message"
           value={form.message}
           placeholder={translations.message}
-          className="h-20 border border-[#767471] border-opacity-30 p-2 bg-transparent"
+          className="h-20 border border-[#767471] border-opacity-30 p-2 bg-transparent text-black"
           onChange={handleChange}
           required
         />
