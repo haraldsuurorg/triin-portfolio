@@ -11,9 +11,9 @@ export default function middleware(request: NextRequest) {
     );
 
     if (!hasLocale) {
-        const url = request.nextUrl.clone();
-        url.pathname = `/${defaultLocale}${pathname}`;
-        return NextResponse.rewrite(url);
+        return NextResponse.redirect(
+            new URL(`/${defaultLocale}${pathname}`, request.url)
+        );
     }
 
     return NextResponse.next();
