@@ -3,16 +3,21 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    async rewrites() {
+        return {
+            beforeFiles: [
+                {
+                    source: '/',
+                    destination: '/et',
+                },
+                {
+                    source: '/:path((?!api|_next|_vercel|et|en|.*\\..*).*)',
+                    destination: '/et/:path',
+                },
+            ],
+        };
+    },
+};
 
 export default withNextIntl(nextConfig);
-
-
-
-// import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-//   /* config options here */
-// };
-
-// export default nextConfig;
